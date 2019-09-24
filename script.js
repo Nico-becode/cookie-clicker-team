@@ -15,9 +15,9 @@
 
     function change_score(value){
         cookie_counter += value;
-        console.log(value)
         document.getElementById("score").innerText = cookie_counter;
     }
+    
     document.getElementById("cookie").addEventListener("click", () => {
         change_score(multiplier);
     });
