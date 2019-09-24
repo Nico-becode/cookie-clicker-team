@@ -10,18 +10,24 @@
     let boost = 1;
     let price_boost = 150;
     let timer_autoclick;
-    let boostLaunch = false;
+    let boostLaunch = false;    //false means the boost isn't activated
 
 
     const multiplier_augment = 2;
-    const price_augment = 3;
+    const price_augment = 3;    //the multiplier for each price
     const speed = 1000;
 
     function timer(){
+        /*
+            timer() is the time that the boost is activated
+        */
         seconds--;
+
+        //boost is still activated
         if(seconds > 0){
             setTimeout(timer, speed);
         }
+        //boost ended and must be reset
         else {
             seconds = 30;
             boostLaunch = false;
@@ -33,6 +39,9 @@
     }
 
     function check_button(){
+        /*
+            check_button() check is each upgrade is buyable
+        */
         document.getElementById("multi").disabled = cookie_counter < price_multiplier;
         document.getElementById("auto").disabled = cookie_counter < price_autoclick;
         document.getElementById("boost").disabled = cookie_counter < price_boost || boostLaunch;
@@ -40,6 +49,9 @@
     }
 
     function change_score(value){
+        /*
+            change_score() modify
+        */
         if (value >= 0){
             cookie_counter += (value*boost);
         }
@@ -60,9 +72,9 @@
         
         price_multiplier *= price_augment;
         change_score(-(price_multiplier / price_augment));
+        multiplier *= multiplier_augment;
         
         document.getElementById("multiPrice").innerHTML = `Price: ${price_multiplier} cookies`;
-        multiplier *= multiplier_augment;
         document.getElementById("multi").innerHTML= `Multiplier x ${multiplier} `;
 
 
@@ -76,9 +88,9 @@
             }, speed);
         }
         autoclick++;
-
         price_autoclick *= price_augment;
         change_score(-(price_autoclick / price_augment));
+
         document.getElementById("auto").innerHTML = `${autoclick} autoclick`;
         document.getElementById("autoPrice").innerHTML = `Price: ${price_autoclick} cookies`;
 
