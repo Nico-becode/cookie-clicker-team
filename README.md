@@ -1,1 +1,1 @@
-# cookie-clicker-teqm
+# cookie-clicker-team
