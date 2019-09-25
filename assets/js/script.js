@@ -50,11 +50,13 @@
 
     function change_score(value){
         /*
-            change_score() modify
+            change_score() modify the score of the game
         */
+       //new high score
         if (value >= 0){
             cookie_counter += (value*boost);
         }
+        //buy at the store
         else {
             cookie_counter += value;
         }
@@ -67,10 +69,12 @@
     document.getElementById("cookie").addEventListener("click", () => {
         change_score(multiplier);
     });
+
     /* Multiplier button */
     document.getElementById("multi").addEventListener("click", () => {
         
         price_multiplier *= price_augment;
+        //give the previous price
         change_score(-(price_multiplier / price_augment));
         multiplier *= multiplier_augment;
         
@@ -89,6 +93,7 @@
         }
         autoclick++;
         price_autoclick *= price_augment;
+        //give the previous price
         change_score(-(price_autoclick / price_augment));
 
         document.getElementById("auto").innerHTML = `${autoclick} autoclick`;
@@ -101,6 +106,7 @@
         boostLaunch = true;
 
         price_boost*= price_augment;
+        //give the previous price
         change_score(-(price_boost / price_augment));
         
         boost = 3;
