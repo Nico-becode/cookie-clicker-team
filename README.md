@@ -1,6 +1,6 @@
-# cookie-clicker-team
+# Sushi-Clicker
 
-The goal here was to code a cookie-clicker like game in order to:
+The goal here was to code a clicker game in order to:
 * Learn how to work in team
 * Use our new JavaScript's skills
 
@@ -48,15 +48,11 @@ Some of the pictures are taken by myself, the others come from these website:
 https://pixabay.com/fr/
 http://clipart-library.com/leaf-cliparts.html
 https://fontawesome.com/v4.7.0/icons/
+https://pixabay.com/fr/illustrations/sushi-cuisine-japonaise-4206060/
+https://pixabay.com/fr/illustrations/cuisine-japonaise-sushi-la-bi%C3%A8re-4156809/
 
-
-### Lighthouse Test Results
-
-Performance: 100  
-Accessibility: 96  
-Best Practices: 93  
-SEO: 100  
 
 ### Important dates
 Start date: September, 24 2019  
 End Date: September, 25 2019
+
