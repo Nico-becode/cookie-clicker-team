@@ -1,8 +1,8 @@
 # Sushi-Clicker
 
 The goal here was to code a clicker game in order to:
-* Learn how to work in team
-* Use our new JavaScript's skills
+* Learn how to work with a team.
+* Use our new JavaScript's skills.
 
 ## Team members
 
@@ -14,11 +14,11 @@ The goal here was to code a clicker game in order to:
 ## Objectives
 
 The game has to diplay:
-* A points' counter
-* A multiplier button with a price tag which increase with its use
-* An autoclicker button
-* A bonus button which grant a boost of 200% during 30 seconds. The countdown must be shown inside the button.
-* Buttons schouldn't be clickable if player has not enough credit 
+* A point counter.
+* A multiplier button with a price tag that increases.
+* An autoclicker button.
+* A bonus button which grants a boost of 1000% during 30 seconds. The countdown must be shown inside the button.
+* Buttons shouldn't be clickable if the player doesn't have enough credit.
   
 * Bonus: We made the game responsive 
 
@@ -37,7 +37,7 @@ The game has to diplay:
 
 ### Material
 
-Source Code Editor: Visual Studio Code
+Source Code Editor: Visual Studio Code.
 
 ## Sources
 
