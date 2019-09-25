@@ -27,6 +27,7 @@
         */
         my_game = localStorage.getItem("data");
 
+        //my_game = null
         if (!my_game){
             my_game = default_game;
         }
@@ -42,12 +43,12 @@
 
 
         document.getElementById("score").innerHTML = my_game.cookie_counter;
-        document.getElementById("multiPrice").innerHTML = `Price: ${my_game.price_multiplier} cookies`;
+        document.getElementById("multiPrice").innerHTML = `Price: ${my_game.price_multiplier} sushi`;
         document.getElementById("multi").innerHTML= `Multiplier x ${my_game.multiplier} `;
         document.getElementById("auto").innerHTML = `${my_game.autoclick} autoclick`;
-        document.getElementById("autoPrice").innerHTML = `Price: ${my_game.price_autoclick} cookies`;
+        document.getElementById("autoPrice").innerHTML = `Price: ${my_game.price_autoclick} sushi`;
         document.getElementById("boost").innerHTML = `Boost: ${my_game.seconds} sec`;
-        document.getElementById("boostPrice").innerHTML = `Price: ${my_game.price_boost} cookies`;
+        document.getElementById("boostPrice").innerHTML = `Price: ${my_game.price_boost} sushi`;
 
     }
 
@@ -121,7 +122,7 @@
         change_score(-(my_game.price_multiplier / price_augment));
         my_game.multiplier *= multiplier_augment;
         
-        document.getElementById("multiPrice").innerHTML = `Price: ${my_game.price_multiplier} cookies`;
+        document.getElementById("multiPrice").innerHTML = `Price: ${my_game.price_multiplier} sushi`;
         document.getElementById("multi").innerHTML= `Multiplier x ${my_game.multiplier} `;
 
 
@@ -140,7 +141,7 @@
         change_score(-(my_game.price_autoclick / price_augment));
 
         document.getElementById("auto").innerHTML = `${my_game.autoclick} autoclick`;
-        document.getElementById("autoPrice").innerHTML = `Price: ${my_game.price_autoclick} cookies`;
+        document.getElementById("autoPrice").innerHTML = `Price: ${my_game.price_autoclick} sushi`;
 
     });
     /* Boost button */
@@ -155,7 +156,7 @@
         my_game.boost = 3;
 
         setTimeout(timer, speed);
-        document.getElementById("boostPrice").innerHTML = `Price: ${my_game.price_boost} cookies`;
+        document.getElementById("boostPrice").innerHTML = `Price: ${my_game.price_boost} sushi`;
     });
 
     
