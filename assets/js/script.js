@@ -32,7 +32,7 @@
         } else {
             my_game = JSON.parse(my_game);
             my_game.timer_autoclick = setInterval(() => {
-                change_score(my_game.autoclick);
+                change_score(my_game.autoclick * my_game.multiplier);
             }, speed);
             if (my_game.boostLaunch) {
                 setTimeout(timer, speed);
@@ -130,7 +130,7 @@
 
         if (my_game.autoclick == 0) {
             my_game.timer_autoclick = setInterval(() => {
-                change_score(my_game.autoclick);
+                change_score(my_game.autoclick * my_game.multiplier);
             }, speed);
         }
         my_game.autoclick++;
@@ -151,7 +151,7 @@
         //gives the previous price
         change_score(-(my_game.price_boost / price_augment));
 
-        my_game.boost = 3;
+        my_game.boost = 10;
 
         setTimeout(timer, speed);
         document.getElementById("boostPrice").innerHTML = `Cost: ${my_game.price_boost} Sushis`;
