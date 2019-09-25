@@ -1,25 +1,13 @@
         body {
-            background: url("../img/background2.png") no-repeat center center fixed;
+            background: url("../img/background.png") no-repeat center center fixed;
             background-size: cover;
             text-align: center;
-        }
-        
-        .btn1 {
-            margin-left: 50%;
-            margin-right: 50%;
-            margin: auto;
         }
         
         #cook {
             height: 300px;
             width: auto;
             display: block;
-        }
-        
-        .btn1 {
-            margin-left: 50%;
-            margin-right: 50%;
-            margin: auto;
         }
         
         .btn1 {
@@ -47,6 +35,9 @@
             text-decoration: none;
             text-shadow: 0px 0px 0px #ffffff;
             font-family: china;
+            margin-left: 50%;
+            margin-right: 50%;
+            margin: auto;
         }
         
         .btn1:hover {
@@ -60,11 +51,11 @@
             background-color: #dfdfdf;
         }
         
-        .indicator {
+        .cost {
             text-align: center;
             font-size: 2em;
             font-style: italic;
-            background-color: yellowgreen;
+            background-color: rgb(87, 129, 3);
             margin: 10px;
             border-radius: 5px;
             color: white;
@@ -92,7 +83,7 @@
             text-shadow: 8px 8px #4e4e4e;
         }
         
-        .indicator1 {
+        .counter {
             font-size: 6em;
             font-family: china;
             color: white;
