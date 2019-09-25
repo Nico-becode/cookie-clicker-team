@@ -130,9 +130,19 @@
   margin: auto;
 }
 
-.h1 {
+h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   color: white;
+  font-size: 400%;
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 130%;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
