@@ -5,7 +5,7 @@
         }
         
         #cook {
-            height: 300px;
+            height: 200px;
             width: auto;
             display: block;
         }
@@ -30,7 +30,7 @@
             cursor: pointer;
             color: #777777;
             font-family: Arial;
-            font-size: 3em;
+            font-size: 2em;
             padding: 0, 5%;
             text-decoration: none;
             text-shadow: 0px 0px 0px #ffffff;
@@ -53,7 +53,7 @@
         
         .cost {
             text-align: center;
-            font-size: 2em;
+            font-size: 1em;
             font-style: italic;
             background-color: rgb(87, 129, 3);
             margin: 10px;
@@ -78,13 +78,13 @@
         h1 {
             font-family: china;
             color: rgb(255, 255, 255);
-            font-size: 8em;
+            font-size: 6em;
             padding-top: 2%;
             text-shadow: 8px 8px #4e4e4e;
         }
         
         .counter {
-            font-size: 6em;
+            font-size: 5em;
             font-family: china;
             color: white;
             background-color: rgb(71, 71, 71);
