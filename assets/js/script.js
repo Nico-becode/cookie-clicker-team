@@ -1,5 +1,5 @@
 (() => {
-
+    //////////////START VARIABLES & CONSTANTS/////////////////////
     let default_game = {
         cookie_counter: 0,
         multiplier: 1,
@@ -19,7 +19,7 @@
     const speed = 1000;
 
     let my_game;
-
+    //////////////////////LOCAL STORAGE////////////////////////
     function clear_game() {
         /*
             clear_game() reset de game at the last localsavegarde
@@ -39,6 +39,7 @@
             }
         }
 
+        //////////////////////SET GAME////////////////////////////////
 
         document.getElementById("score").innerHTML = my_game.cookie_counter;
         document.getElementById("multiPrice").innerHTML = `Cost: ${my_game.price_multiplier} Sushis`;
@@ -49,16 +50,15 @@
         document.getElementById("boostPrice").innerHTML = `Cost: ${my_game.price_boost} Sushis`;
 
     }
-
+    /////////////////////SAVE GAME (10 SEC)/////////////////////////
     function save_game() {
         /*
             save_game() puts the data of game on the localStorage
         */
         localStorage.setItem("data", JSON.stringify(my_game));
-        console.log("save");
         setTimeout(save_game, 10000);
     }
-
+    ///////////////////////////////////////////////////////////////////////
     function timer() {
         /*
             timer() is the time for which the boost is activated
